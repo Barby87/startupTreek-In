@@ -1,0 +1,36 @@
+.header {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.header__div-texto {
+    grid-column:1/2;
+    grid-row: 1/2;
+}
+
+.header__div-img {
+    grid-column:1/2;
+    grid-row: 2/3;
+}
+
+@media screen and (min-width: 768px) {
+    .header {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .header__div-texto {
+        width: 70%;
+        padding-top: 3em;
+        grid-column:1/2;
+        grid-row: 1/2;
+    }
+    
+    .header__div-img {
+        grid-column:1/3;
+        grid-row: 1/3;
+    }
+    
+}

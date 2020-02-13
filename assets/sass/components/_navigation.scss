@@ -1,0 +1,13 @@
+/* Base*/
+.navbar {
+    // padding: 0.4em 5em;
+    display: flex;
+}
+
+/* Quitando borde de ícono hamburguesa*/
+.navbar-light .navbar-toggler {
+    border-color: transparent;
+    font-weight: $bold;
+    color: $raising-black;
+}
+

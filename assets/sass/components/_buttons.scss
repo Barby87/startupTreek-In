@@ -1,0 +1,35 @@
+/* Navbar buttons*/
+/*Base*/
+.navbar-button {
+    padding: 0.5em 1em;
+    font-weight: $bold;
+}
+
+/* Button scheme*/
+.navbar-button__login {
+    border: none; 
+    background-color: $white;
+    font-weight: $bold;
+
+    &:hover {
+        background-color: $middle-blue;
+    }
+
+    &:focus {
+        background-color: $lavender-gray;
+    }
+}
+
+.navbar-button__signup {
+    border: none; 
+    color: $white;
+    background-color: $ball-blue;
+
+    &:hover {
+        background-color: $middle-blue;
+    }
+
+    &:focus {
+        background-color: $gray;
+    }
+}
