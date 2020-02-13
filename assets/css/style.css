@@ -9879,6 +9879,13 @@ h3 {
   width: 100%;
 }
 
+.prices {
+  height: 100vh;
+  background-image: url("../img/bg-price.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
 .header {
   display: grid;
   grid-template-columns: 1fr;
@@ -9938,6 +9945,7 @@ h3 {
   border: none;
   color: #FFF;
   background-color: #2AB7CA;
+  margin-top: 1em;
 }
 .navbar-button__signup:hover {
   background-color: #77D1DD;
