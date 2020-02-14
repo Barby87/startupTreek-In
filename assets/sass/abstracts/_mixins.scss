@@ -1,0 +1,22 @@
+@mixin white-button {
+    border: none; 
+    background-color: $white;
+    font-weight: $bold;
+
+    &:hover {
+        background-color: $middle-blue;
+    }
+
+    &:focus {
+        background-color: $lavender-gray;
+    }
+}
+
+@mixin ballBlue-button {
+    border: none; 
+    color: $white;
+    background-color: $ball-blue;
+    margin-top: 1em;
+    font-weight: $bold;
+}
+

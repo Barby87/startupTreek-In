@@ -1,0 +1,22 @@
+.features {
+    display: flex;
+    flex-wrap: wrap;
+    // text-align: center;
+    justify-content: center;
+
+    // h3 {
+    //     text-align: center;
+    // }
+}
+
+.features__graph-img {
+    width: 100%;
+}
+
+.features__text {
+
+    h5 {
+        text-align: center;
+        font-weight: $bold;
+    }
+}

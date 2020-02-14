@@ -2,35 +2,29 @@
 /*Base*/
 .navbar-button {
     padding: 0.5em 1em;
-    font-weight: $bold;
 }
 
 /* Button scheme*/
 .navbar-button__login {
-    border: none; 
-    background-color: $white;
-    font-weight: $bold;
-
-    &:hover {
-        background-color: $middle-blue;
-    }
-
-    &:focus {
-        background-color: $lavender-gray;
-    }
+    @include white-button;
 }
 
 .navbar-button__signup {
-    border: none; 
-    color: $white;
-    background-color: $ball-blue;
-    margin-top: 1em;
-
     &:hover {
         background-color: $middle-blue;
     }
-
+    
     &:focus {
         background-color: $gray;
     }
+}
+
+.navbar-button__signup, .card-button {
+    @include ballBlue-button;
+}
+
+.card-button {
+    width: 100%;
+    padding: 0.6em;
+    font-weight: $regular;
 }

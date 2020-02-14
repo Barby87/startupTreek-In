@@ -1,0 +1,30 @@
+.card {
+    border-radius: 0;
+    padding: 1.5em 1em;
+    margin: 2em 1.5em;
+
+    ul {
+        border-top: 1px solid $gray;
+        border-bottom: 1px solid $gray;
+    }
+}
+
+.card-body {
+
+    h1 {
+        font-weight: $bold;
+    }
+}
+
+.card1 {
+    ul {
+        padding: 1.5em 1.8em 9em 1.8em;
+    }
+}
+
+.card2 {
+
+    ul {
+        padding: 1.5em 1.8em 4.5em 1.8em;
+    }
+}
