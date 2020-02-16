@@ -9966,7 +9966,7 @@ p {
   width: 100%;
   background-image: url("/assets/img/bg-price.svg");
   background-repeat: no-repeat;
-  height: 10rem;
+  height: 13rem;
   background-size: cover;
   display: flex;
   justify-content: center;
@@ -9986,6 +9986,52 @@ p {
   .img-wrapper {
     height: 21em !important;
     background-size: cover;
+  }
+}
+.footer {
+  background-color: #221D23;
+  padding: 1.5em 0;
+  font-size: 14px;
+}
+
+.footer-wrapper__p {
+  text-align: center;
+  padding-top: 1.5em;
+  color: #C7C8CC;
+}
+.footer-wrapper__p p {
+  font-size: 14px;
+}
+
+.footer-wrapper__container {
+  display: flex;
+  justify-content: space-around;
+}
+.footer-wrapper__container a {
+  text-decoration: none;
+  display: inline-block;
+  color: #C7C8CC;
+}
+
+@media screen and (min-width: 768px) {
+  .footer-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .footer-wrapper__container {
+    display: flex;
+  }
+  .footer-wrapper__container a {
+    padding: 0 2em;
+    font-size: 16px;
+  }
+
+  .footer-wrapper__p {
+    padding-top: 0;
+  }
+  .footer-wrapper__p p {
+    font-size: 16px;
   }
 }
 .header {
@@ -10067,7 +10113,6 @@ p {
 .card-button {
   width: 100%;
   padding: 0.6em;
-  font-weight: 400;
 }
 
 /* Base*/
@@ -10103,6 +10148,12 @@ p {
 
 .card2 ul {
   padding: 1.5em 1.8em 4.5em 1.8em;
+}
+
+@media screen and (min-width: 992px) {
+  .card1 {
+    margin-right: 5em;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
