@@ -1,3 +1,5 @@
+/* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.26, autoprefixer: v9.7.3) */
+
 .footer {
     background-color: $raising-black;
     padding: 1.5em 0;
@@ -15,8 +17,11 @@
 }
 
 .footer-wrapper__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-around;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
 
     a {
         text-decoration: none;
@@ -27,11 +32,17 @@
 
 @media screen and (min-width: 768px) {
     .footer-wrapper {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        justify-content: space-between;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
     }
 
     .footer-wrapper__container {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
 
         a {
@@ -49,4 +60,3 @@
     }
 
 }
-

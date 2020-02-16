@@ -1,3 +1,5 @@
+/* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.26, autoprefixer: v9.7.3) */
+
 .features {
     padding-top: 3em;
     padding-bottom: 6em;
@@ -11,9 +13,14 @@
 }
 
 .features-wrapper {
+   display: -webkit-box;
+   display: -ms-flexbox;
    display: flex;
-   flex-wrap: wrap;
-   justify-content: center;
+   -ms-flex-wrap: wrap;
+       flex-wrap: wrap;
+   -webkit-box-pack: center;
+       -ms-flex-pack: center;
+           justify-content: center;
 }
 
 .features__graph {
@@ -40,4 +47,31 @@
     .features__text {
         width: 43%;
     }
+}
+
+/* Animación del gráfico*/
+
+@-webkit-keyframes opacar {
+    0% {opacity: 0;}
+    50% {opacity: 0.5;}
+    100% {opacity: 0.8;}
+}
+
+@keyframes opacar {
+    0% {opacity: 0;}
+    50% {opacity: 0.5;}
+    100% {opacity: 1;}
+}
+
+.features__graph-img {
+    -webkit-animation-name: opacar;
+            animation-name: opacar;
+    -webkit-animation-duration: 4s;
+            animation-duration: 4s;
+    -webkit-animation-delay: 2s;
+            animation-delay: 2s;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+    -webkit-animation-fill-mode: backwards;
+            animation-fill-mode: backwards;
 }

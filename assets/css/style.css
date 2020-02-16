@@ -9914,6 +9914,7 @@ p {
     width: 30%;
   }
 }
+/* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.26, autoprefixer: v9.7.3) */
 .features {
   padding-top: 3em;
   padding-bottom: 6em;
@@ -9926,8 +9927,13 @@ p {
 }
 
 .features-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
 }
 
@@ -9954,6 +9960,42 @@ p {
     width: 43%;
   }
 }
+/* Animación del gráfico*/
+@-webkit-keyframes opacar {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 0.8;
+  }
+}
+@keyframes opacar {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 0.8;
+  }
+}
+.features__graph-img {
+  -webkit-animation-name: opacar;
+  animation-name: opacar;
+  -webkit-animation-duration: 4s;
+  animation-duration: 4s;
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-fill-mode: backwards;
+  animation-fill-mode: backwards;
+}
+
 .prices {
   display: flex;
   flex-wrap: wrap;
@@ -9988,6 +10030,7 @@ p {
     background-size: cover;
   }
 }
+/* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.26, autoprefixer: v9.7.3) */
 .footer {
   background-color: #221D23;
   padding: 1.5em 0;
@@ -10004,7 +10047,10 @@ p {
 }
 
 .footer-wrapper__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-pack: distribute;
   justify-content: space-around;
 }
 .footer-wrapper__container a {
@@ -10015,11 +10061,17 @@ p {
 
 @media screen and (min-width: 768px) {
   .footer-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
   }
 
   .footer-wrapper__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
   }
   .footer-wrapper__container a {
